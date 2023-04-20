@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         footerBgImage: "url('/src/assets/images/footerbgImage1.png')",
+        heroBgImage: "url('/src/assets/images/herosecbg.png')",
+        createOfferBgImage: "url('/src/assets/images/createOfferbg.png')",
+        perfectInvoiceBgImage: "url('/src/assets/images/perfectInvoicebg.png')",
       },
       fontFamily: {
         "tt-firs-neue": "'TT Firs Neue'",

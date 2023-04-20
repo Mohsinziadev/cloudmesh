@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
+import HeroSec from "./components/HeroSec";
+import CreateOffer from "./components/CreateOffer";
+import PerfectInvoicing from "./components/PerfectInvoicing";
+
 
 const Buro365 = () => {
 
   return (
-    <div className="flex flex-col py-5">
-     <div>Buro365 Screen</div>
+    <div className="flex flex-col">
+      <HeroSec />
+      <CreateOffer />
+      <PerfectInvoicing />
     </div>
   );
 };

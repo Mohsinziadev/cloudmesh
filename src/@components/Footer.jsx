@@ -8,13 +8,13 @@ import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 function Footer() {
   return (
-    <footer className=" border-t-[0.01rem] mt-20 font-tt-firs-neue">
+    <footer className="mt-20 font-tt-firs-neue">
       <div className="flex justify-center w-full">
         <div className="w-full  max-w-[1080px] ">
           <div className="flex  w-full px-[5rem] py-34 ">
             <div className="flex flex-col justify-between h-[15rem] py-6 w-full bg-contain   bg-no-repeat bg-footerBgImage">
               <div className="flex gap-0   justify-center">
-                <img src={websitelogoWhite} className="h-14 w-36" />
+                <img src={websitelogoWhite} className="h-14 w-44" />
               </div>
               <div className="flex justify-center">
                 <h3 className="text-3xl text-white">Lets start your journey with Buro 365</h3>
@@ -60,7 +60,8 @@ function Footer() {
               <div className="flex flex-col w-fit">
                 <h3 className="text-primary text-lg font-semibold">Contact</h3>
                 <ul className="flex text-base text-graySite flex-col gap-4 mt-4">
-                  <li className="flex gap-3 items-center">  <PhoneIcon className="h-4 w-4 text-primary" />  +123 456 7899 </li>
+                  <li className="flex gap-3 items-center">
+                  <PhoneIcon className="h-4 w-4 text-primary" />  +123 456 7899 </li>
                   <li className="flex gap-3 items-center">  <EnvelopeIcon className="h-4 w-4 text-primary" /> info@buero-365.com </li>
                   <li className="flex gap-3 items-center">  <MapPinIcon className="h-4 w-4 text-primary" /> Zollwegli 2, 4704 <br /> Niederbipp, Bern </li>
                 </ul>
