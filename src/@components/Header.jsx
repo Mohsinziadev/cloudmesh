@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import websitelogo from "../assets/images/websiteLogo.png"
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 const navLinks = [
   {
     Link: "Home",
@@ -53,11 +53,9 @@ function Header({ services }) {
           <nav className="hidden md:flex flex-row items-center justify-start gap-[50px] lg:flex lg:gap-[35px]">
             {navLinks.map((data, index) => {
               return (
-                <Link
+                <div
                   key={index}
                   // To={`/${data.To}`}
-
-                  href="/Contactus"
                   onClick={() => { setActiveTab(data.To); onNavigateClick(data.To) }}
                   className="flex h-fit"
                 >
@@ -67,7 +65,7 @@ function Header({ services }) {
                       {data.Link}
                     </div>
                   </div>
-                </Link>
+                </div>
               );
             })}
 
