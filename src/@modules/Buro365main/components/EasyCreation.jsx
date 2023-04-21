@@ -1,5 +1,6 @@
 import React from 'react'
 import creation from "../../../assets/images/easyCreation.png"
+import websitelogoWhite from "../../../assets/images/burologowhite.png"
 const EasyCreation = () => {
   return (
     <div className='flex flex-col mt-20 font-tt-firs-neue'>
@@ -20,6 +21,21 @@ const EasyCreation = () => {
 
         </div>
       </div>
+
+        <div className="flex w-full px-[5rem] mt-20 py-34 justify-center">
+          <div className="flex flex-col justify-between h-[15rem] py-6 w-full bg-contain   bg-no-repeat bg-footerBgImage w-auto md:w-[55rem]">
+            <div className="flex gap-0   justify-center">
+              <img src={websitelogoWhite} className="h-14 w-44" />
+            </div>
+            <div className="flex justify-center">
+              <h3 className="text-3xl text-white">Lets start your journey with Buro 365</h3>
+            </div>
+            <div className="flex justify-center">
+              <button className="bg-white px-6 py-2 rounded-full text-2xl text-primary ">get started!</button>
+            </div>
+          </div>
+
+     </div>
 
 
     </div>

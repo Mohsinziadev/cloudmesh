@@ -1,5 +1,5 @@
 import React from "react";
-import websitelogoWhite from "../assets/images/burologowhite.png"
+
 import websitelogo from "../assets/images/websiteLogo.png";
 import social from "../assets/images/Social.png";
 import { PhoneIcon } from "@heroicons/react/24/solid";
@@ -11,19 +11,7 @@ function Footer() {
     <footer className="mt-20 font-tt-firs-neue">
       <div className="flex justify-center w-full">
         <div className="w-full  max-w-[1080px] ">
-          <div className="flex  w-full px-[5rem] py-34 ">
-            <div className="flex flex-col justify-between h-[15rem] py-6 w-full bg-contain   bg-no-repeat bg-footerBgImage">
-              <div className="flex gap-0   justify-center">
-                <img src={websitelogoWhite} className="h-14 w-44" />
-              </div>
-              <div className="flex justify-center">
-                <h3 className="text-3xl text-white">Lets start your journey with Buro 365</h3>
-              </div>
-              <div className="flex justify-center">
-                <button className="bg-white px-6 py-2 rounded-full text-2xl text-primary ">get started!</button>
-              </div>
-            </div>
-          </div>
+
           <div className="flex flex-col px-5 gap-10 md:gap-0 md:px-0 md:flex-row w-full justify-between  py-20">
             <div className="w-full md:w-3/12 flex justify-center">
              <div className="flex flex-col gap-6">
