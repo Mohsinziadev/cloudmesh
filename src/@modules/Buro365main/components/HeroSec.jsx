@@ -35,10 +35,10 @@ const HeroSec = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-10 px-20 -mt-20">
+      <div className="flex flex-col md:flex-row gap-10 px-10 md:px-20 -mt-20">
         {cardsData.map((data,index) => {
           return (
-            <div className="w-2/6 flex justify-center">
+            <div className="col-12 md:w-2/6  flex justify-center">
               <div className="flex flex-col rounded-lg gap-5 py-10 shadow-2xl p-6">
 
                 <div className="h-10 text-primary w-10">{data.cardIcon}</div>

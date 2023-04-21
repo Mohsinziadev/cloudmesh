@@ -24,8 +24,8 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex w-full justify-between  py-20">
-            <div className="w-3/12 flex justify-center">
+          <div className="flex flex-col px-5 gap-10 md:gap-0 md:px-0 md:flex-row w-full justify-between  py-20">
+            <div className="w-full md:w-3/12 flex justify-center">
              <div className="flex flex-col gap-6">
                 <img src={websitelogo} className="h-10 w-32" />
                 <p className="text-base  font-base">Büro-365 is the ideal invoicing program for craftsmen and moving companies.</p>
@@ -34,7 +34,7 @@ function Footer() {
                 </div>
              </div>
             </div>
-            <div className="w-3/12 flex justify-end">
+            <div className="w-full md:w-3/12 flex  justify-start md:justify-end">
              <div className="flex flex-col w-fit">
                 <h3 className="text-primary text-lg font-semibold">Company</h3>
                 <ul className="flex text-base text-graySite flex-col gap-4 mt-4">
@@ -45,7 +45,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="w-3/12 flex justify-end">
+            <div className="w-full md:w-3/12 flex justify-start md:justify-end">
               <div className="flex flex-col w-fit">
                 <h3 className="text-primary text-lg font-semibold">Help</h3>
                 <ul className="flex text-base text-graySite flex-col gap-4 mt-4">
@@ -56,7 +56,7 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="w-3/12 flex justify-end">
+            <div className="w-full md:w-3/12 flex justify-start md:justify-end">
               <div className="flex flex-col w-fit">
                 <h3 className="text-primary text-lg font-semibold">Contact</h3>
                 <ul className="flex text-base text-graySite flex-col gap-4 mt-4">

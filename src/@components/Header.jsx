@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import websitelogo from "../assets/images/websiteLogo.png"
+import { Link, useNavigate } from "react-router-dom";
 const navLinks = [
   {
     Link: "Home",
@@ -32,6 +33,11 @@ const navLinks = [
 function Header({ services }) {
   const [activeTab, setActiveTab] = useState("home");
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const onNavigateClick = (data) =>{
+    console.log("data on navigate ",data)
+    navigate("/contactus");
+  }
 
   return (
     <div className="flex flex-col  shadow-md bg-white font-tt-firs-neue w-full relative  ">
@@ -47,10 +53,12 @@ function Header({ services }) {
           <nav className="hidden md:flex flex-row items-center justify-start gap-[50px] lg:flex lg:gap-[35px]">
             {navLinks.map((data, index) => {
               return (
-                <div
+                <Link
                   key={index}
-                  href="/"
-                  onClick={() => setActiveTab(data.To)}
+                  // To={`/${data.To}`}
+
+                  href="/Contactus"
+                  onClick={() => { setActiveTab(data.To); onNavigateClick(data.To) }}
                   className="flex h-fit"
                 >
                   <div
@@ -59,7 +67,7 @@ function Header({ services }) {
                       {data.Link}
                     </div>
                   </div>
-                </div>
+                </Link>
               );
             })}
 
